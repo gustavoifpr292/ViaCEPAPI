@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="ifpr.png" class="logo">
+        <h1>Consulta de CEP</h1>
+        
+        <div class="form-group">
+            <label for="cep">Digite o CEP (somente números):</label>
+            <input type="text" id="cep" maxlength="8" placeholder="Ex: 80215900">
+        </div>
+        
+        <button id="consultar">Consultar CEP</button>
+        
+        <div id="error" class="error">
+            <strong>CEP inválido ou não encontrado.</strong> Por favor, verifique o número digitado e tente novamente.
+        </div>
+        
+        <div id="result" class="result">
+            <h2>Resultado da Consulta</h2>
+            <p><strong>CEP:</strong> <span id="cep-resultado">-</span></p>
+            <p><strong>Logradouro:</strong> <span id="logradouro">-</span></p>
+            <p><strong>Complemento:</strong> <span id="complemento">-</span></p>
+            <p><strong>Bairro:</strong> <span id="bairro">-</span></p>
+            <p><strong>Cidade:</strong> <span id="localidade">-</span>, <span id="uf">-</span></p>
+            <p><strong>Código IBGE:</strong> <span id="ibge">-</span></p>
+            <p><strong>DDD:</strong> <span id="ddd">-</span></p>
+        </div>
+        
+        <footer>
+            Instituto Federal do Paraná
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

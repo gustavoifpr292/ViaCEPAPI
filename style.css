@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f4ea;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #2e7d32;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #2e7d32;
+    margin: 0 0 25px 0;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1e7a34;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: none;
+    text-align: left;
+    border-left: 4px solid #2e7d32;
+}
+
+.result h2 {
+    color: #1e7a34;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.result p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.result span {
+    color: #555;
+}
+
+.error {
+    color: #d32f2f;
+    margin-top: 15px;
+    display: none;
+    background-color: #fde8e8;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 30px;
+    color: #1e7a34;
+    font-size: 13px;
+    text-align: center;
+}
